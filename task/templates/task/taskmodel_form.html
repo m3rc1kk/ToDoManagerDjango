@@ -1,0 +1,23 @@
+{% extends 'task/base.html' %}
+{% load i18n %}
+{% load widget_tweaks %}
+{% block title %}{% trans "Создание задачи" %}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="task__form">
+        <form action="/task/create/" method="post">
+            <h1 class="task__form__text">{% trans "Добавить задачу" %}</h1>
+            {% csrf_token %}
+            <div class="task__form__text-under task_text">{% trans 'Задание' %}</div>
+            <div>{% render_field form.content class+="form form-content" %}</div>
+            <div class="task__form__text-under date_text">{% trans 'Срок выполнения' %}</div>
+            <div>{% render_field form.complete_date class+="form" %}</div>
+            <div class="task_form__buttons">
+                <button class="task__form-btn" type="submit">{% trans "ДОБАВИТЬ" %}</button>
+                <a href="{% url 'task-list' %}" class="task__form-btn cancel-btn">{% trans "ОТМЕНИТЬ" %}</a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock%}

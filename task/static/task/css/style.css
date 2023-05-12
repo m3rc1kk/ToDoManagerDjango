@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Mulish:wght@600;700;800&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    background-color: #00112a;
+}
+
+.container {
+    width: 100%;
+    max-width: 976px;
+    margin: 0 auto;
+
+}
+
+
+
+/* main page */
+.start_work {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    background: url(https://n1s2.hsmedia.ru/50/82/74/5082744ba7f198debca714b3d87400c6/690x380_0x0a330c2a_13522982981626189717.jpeg);
+    background-size: 100%;
+    position: relative;
+
+}
+
+.bg_color {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00112a;
+    opacity: .8;
+
+
+}
+
+.start_work_company {
+    font-size: 18px;
+    font-weight: 400;
+    z-index: 1;
+}
+
+.start_work_title {
+    font-size: 100px;
+    font-weight: 800;
+    margin: 7px 0 20px 0;
+    z-index: 1;
+}
+
+.start_work_subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+.start_work_button {
+    background-color: #d24a43;
+    padding: 20px 78px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .2s linear;
+    z-index: 1;
+}
+
+
+.start_work_button:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+/* header */
+
+.header {
+    position: relative;
+    width: 100%;
+}
+
+.header_title {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-weight: 800;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.current_user {
+    position: absolute;
+    left: 100px;
+    top: 10px;
+    display: flex;
+}
+
+.current_user_text {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .1s linear;
+}
+
+.current_user_text:hover {
+    opacity: .6;
+}
+
+
+
+
+/* language */
+
+.header_language {
+    position: absolute;
+    display: flex;
+
+    right: 100px;
+    top: 0;
+
+}
+
+.language_form {
+
+    display: block;
+    border: 1px solid;
+    background-color: #00112a;
+    color: #fff;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.language_input {
+    color: #fff;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid;
+    background-color: #00112a;
+    border-radius: 7px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.language_input:hover {
+    background-color: #fff;
+    color: #000;
+    transition: .2s linear;
+}
+
+
+.header_language_text {
+    color: #fff;
+    margin-right: 15px;
+
+
+}
+
+
+
+/* management */
+.management {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.management__inner {
+    display: flex;
+    justify-content: space-around;
+}
+
+.management_count {
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.management_btn {
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: #e8a765;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .1s linear;
+}
+
+
+
+
+.management_btn:hover {
+    background-color: #fff;
+    color: #000;
+
+}
+
+
+
+
+
+
+/* task */
+
+.task {
+    width: 100%;
+    padding-top: 30px;
+
+}
+
+.task_el {
+    position: relative;
+    background-color: #fff;
+    height: 130px;
+    padding-left: 22px;
+    border-radius: 7px;
+}
+
+.task_title {
+    padding: 17px 0 0 0;
+    font-size: 40px;
+    font-weight: 800;
+
+}
+
+.task_date {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+.task_el_button_ed {
+    position: absolute;
+    right: 20px;
+    top: 80px;
+}
+
+.task_el_button_com {
+
+    position: absolute;
+    right: 170px;
+    top: 80px;
+
+}
+
+
+.task_el_button_edit {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    padding: 10px 20px;
+    background-color: #ffb400;
+    border: none;
+    border-radius: 10px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    transition: .1s linear;
+}
+
+.task_el_button_complete {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    padding: 10px 20px;
+    background-color: #52ac62;
+    border: none;
+    border-radius: 10px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    transition: .1s linear;
+}
+
+
+.task_el_button_complete:hover,
+.task_el_button_edit:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+
+
+/* forms */
+
+.task__form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 807px;
+    height: 485px;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+
+
+}
+
+.task__form__text {
+    color: #000;
+    font-weight: 800;
+    font-size: 45px;
+    text-transform: uppercase;
+
+}
+
+
+.task__form__text-under {
+    font-weight: 600;
+
+}
+
+.date_text {
+    margin-bottom: 10px;
+}
+
+.task__form-btn {
+    margin-top: 30px;
+    padding: 13px 30px;
+    background-color: #52ac62;
+    color: #fff;
+    font-weight: 800;
+    font-size: 25px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .1s linear;
+
+}
+
+
+.task__form-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.form {
+    width: 85%;
+    border-radius: 10px;
+    height: 70px;
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+.form-content {
+    margin: 10px 0 30px 0;
+
+}
+
+.cancel-btn {
+    text-decoration: none;
+    background-color: #b61d1d;
+    display: flex;
+    align-items: center;
+}
+
+.task_form__buttons {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+
+/* login forms */
+.loginbtn {
+    background-color: #50b09b;
+    width: 220px;
+
+}
+
+.main-user-form {
+    width: 700px;
+    height: 520px;
+}
+
+.form-user {
+    margin: 10px 0 20px 0;
+    width: 70%;
+
+    text-align: center;
+}
+
+
+.login_text_for_register {
+    margin-top: 20px;
+}
+
+
+
+/* register forms */
+.main-user-form-register {
+    width: 750px;
+    height: 640px;
+}
+
+.registerbtn {
+    background-color: #50b09b;
+    padding: 13px 20px;
+    font-size: 24px;
+
+}
+
+
+/* update forms */
+.main-user-form-update {
+    height: 370px;
+}
+
+
+/* info */
+.main-user-form-info {
+    width: 550px;
+    height: 800px;
+
+}
+
+.user_text {
+    font-weight: 800;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.task_text {
+    margin-top: 40px;
+}
+
+
+.info_user_btns {
+    display: flex;
+    flex-flow: column wrap;
+    position: absolute;
+    width: 70%;
+    top: 600px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.editbtn {
+    height: 45px;
+    text-decoration: none;
+    background-color: #77b97e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.tasklistbtn {
+    height: 45px;
+    text-decoration: none;
+    background-color: #6979b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.exitbtn {
+    height: 45px;
+    text-decoration: none;
+    background-color: #b61d1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

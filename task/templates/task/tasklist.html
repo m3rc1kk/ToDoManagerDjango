@@ -1,0 +1,88 @@
+{% extends 'task/base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Список задач" %}{% endblock %}
+
+
+
+{% block content %}
+
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+
+            <h1 class="header_title">{% trans "МЕНЕДЖЕР ЗАДАЧ" %}</h1>
+            <div class="header_language">
+                <p class="header_language_text">{% trans 'ЯЗЫК' %}:</p>
+
+
+                <form action="{% url 'set_language' %}" method="post">
+                    {% csrf_token %}
+
+                    <select class='language_form' name="language">
+                        {% get_current_language as LANGUAGE_CODE %}
+                        {% get_available_languages as LANGUAGES %}
+                        {% get_language_info_list for LANGUAGES as languages %}
+                        {% for language in languages %}
+                        {% if LANGUAGE_CODE == language.code %}
+                        <option class='language_form' value="{{ language.code }}" selected>
+                            {{ language.name_local }}
+                        </option>
+                        {% else %}
+                        <option class='language_form' value="{{ language.code }}">
+                            {{ language.name_local }}
+                        </option>
+                        {% endif %}
+                        {% endfor %}
+                    </select>
+                    <input class='language_input' type="submit" value="{% trans 'Change' %}" />
+                </form>
+            </div>
+
+            <div class="current_user">
+                <a class="current_user_text" href='{% url "user-info" %}'>{{ request.user }}</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="management">
+    <div class="container">
+        <div class="management__inner">
+
+            <a class="management_btn" href="{% url 'task-create' %}">{% trans "ДОБАВИТЬ ЗАДАЧУ" %}</a>
+            <p class="management_count">{% trans "Количество задач" %}: {{ task_count }}</p>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="task">
+    <div class="container">
+        <div class="task__inner">
+            {% for el in taskmodel_list %}
+            {% if el.is_complete == 0 %}
+            {% if request.user == el.author %}
+            <div class="task_el">
+
+                <h1 class="task_title">{{ el.content }}</h1> <!--25-->
+                <p class="task_date">{% trans "ДАТА ВЫПОЛНЕНИЯ" %}: {{ el.complete_date }}</p>
+                <div class="task_el_button_ed">
+                    <a href="{% url 'task-edit' el.id %}" class="task_el_button_edit">{% trans "ИЗМЕНИТЬ" %}</a>
+                </div>
+                <div class="task_el_button_com">
+                    <a href="{% url 'task-complete' el.id %}" class="task_el_button_complete">{% trans "ВЫПОЛНИТЬ" %}</a>
+                </div>
+
+            </div>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+
+
+        </div>
+    </div>
+</div>
+{% endblock %}

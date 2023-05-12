@@ -1,0 +1,26 @@
+{% extends 'task/base.html' %}
+{% load widget_tweaks %}
+{% load i18n %}
+{% block title %} Регистрация {% endblock %}
+
+{% block content%}
+<div class="container">
+    <div class="task__form main-user-form-register">
+        <form method="post">
+            <h1 class="task__form__text">{% trans "Регистрация" %}</h1>
+            {% csrf_token %}
+            <div class="task__form__text-under task_text">{% trans 'Никнейм' %}</div>
+            <div>{% render_field form.username class+="form form-user" %}</div>
+            <div class="task__form__text-under password_text">{% trans 'Пароль' %}</div>
+            <div>{% render_field form.password1 class+="form form-user" %}</div>
+            <div class="task__form__text-under password_text">{% trans 'Повторить пароль' %}</div>
+            <div>{% render_field form.password2 class+="form form-user" %}</div>
+            <div class="task_form__buttons">
+                <button class="task__form-btn registerbtn" type="submit">{% trans "РЕГИСТРАЦИЯ" %}</button>
+                <a href="{% url 'main-page' %}" class="task__form-btn cancel-btn">{% trans "ОТМЕНИТЬ" %}</a>
+            </div>
+            <div class="login_text_for_register"> <a href="{% url 'user-login' %}">{% trans 'Уже есть аккаунт?' %} </a></div>
+        </form>
+    </div>
+</div>
+{% endblock %}

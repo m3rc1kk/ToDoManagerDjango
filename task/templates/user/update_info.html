@@ -1,0 +1,22 @@
+{% extends 'task/base.html' %}
+{% load widget_tweaks %}
+{% load i18n %}
+{% block title %} Обновление {% endblock %}
+
+{% block content%}
+<div class="container">
+    <div class="task__form main-user-form-update">
+        <form method="post">
+            <h1 class="task__form__text">{% trans "Авторизация" %}</h1>
+            {% csrf_token %}
+            <div class="task__form__text-under task_text">{% trans 'Никнейм' %}</div>
+            <div>{% render_field form.username class+="form form-user" %}</div>
+
+            <div class="task_form__buttons">
+                <button class="task__form-btn loginbtn" type="submit">{% trans "ОБНОВИТЬ" %}</button>
+                <a href="{% url 'task-list' %}" class="task__form-btn cancel-btn">{% trans "ОТМЕНИТЬ" %}</a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

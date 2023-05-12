@@ -1,0 +1,181 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-11 18:53+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\task\templates\task\main_page.html:3
+#, fuzzy
+#| msgid "Обновление задачи"
+msgid "Менеджер Задач"
+msgstr "Task update"
+
+#: .\task\templates\task\main_page.html:12
+msgid "ОТ КОМПАНИИ TEAM CATS"
+msgstr "BY TEAM CATS"
+
+#: .\task\templates\task\main_page.html:15
+msgid "ToDo Manager"
+msgstr ""
+
+#: .\task\templates\task\main_page.html:19
+msgid "СТАНЬТЕ БОЛЕЕ ПРОДУКТИВНЫМ С НАШИМ ПРИЛОЖЕНИЕМ"
+msgstr "GET MORE PRODUCTIVE WITH OUR APP"
+
+#: .\task\templates\task\main_page.html:21
+msgid "НАЧАТЬ СЕЙЧАС"
+msgstr "START NOW"
+
+#: .\task\templates\task\tasklist.html:3
+msgid "Список задач"
+msgstr "Task list"
+
+#: .\task\templates\task\tasklist.html:12
+msgid "МЕНЕДЖЕР ЗАДАЧ"
+msgstr "TASKS MANAGER"
+
+#: .\task\templates\task\tasklist.html:14
+#: .\task\templates\user\info_user.html:14
+msgid "ЯЗЫК"
+msgstr "LANGUAGE"
+
+#: .\task\templates\task\tasklist.html:36
+msgid "Change"
+msgstr ""
+
+#: .\task\templates\task\tasklist.html:52
+msgid "ДОБАВИТЬ ЗАДАЧУ"
+msgstr "ADD TASK"
+
+#: .\task\templates\task\tasklist.html:53
+msgid "Количество задач"
+msgstr "Number of tasks"
+
+#: .\task\templates\task\tasklist.html:69
+msgid "ДАТА ВЫПОЛНЕНИЯ"
+msgstr "DATE OF COMPLETION"
+
+#: .\task\templates\task\tasklist.html:71
+#: .\task\templates\user\info_user.html:19
+msgid "ИЗМЕНИТЬ"
+msgstr "CHANGE"
+
+#: .\task\templates\task\tasklist.html:74
+msgid "ВЫПОЛНИТЬ"
+msgstr "EXECUTE"
+
+#: .\task\templates\task\taskmodel_form.html:4
+msgid "Создание задачи"
+msgstr "Create a task"
+
+#: .\task\templates\task\taskmodel_form.html:10
+msgid "Добавить задачу"
+msgstr "Add task"
+
+#: .\task\templates\task\taskmodel_form.html:12
+#: .\task\templates\task\taskmodel_update_form.html:13
+msgid "Задание"
+msgstr "Task"
+
+#: .\task\templates\task\taskmodel_form.html:14
+#: .\task\templates\task\taskmodel_update_form.html:15
+msgid "Срок выполнения"
+msgstr "Deadline"
+
+#: .\task\templates\task\taskmodel_form.html:17
+msgid "ДОБАВИТЬ"
+msgstr "ADD"
+
+#: .\task\templates\task\taskmodel_form.html:18
+#: .\task\templates\task\taskmodel_update_form.html:20
+#: .\task\templates\user\login_user.html:18
+#: .\task\templates\user\register_user.html:20
+#: .\task\templates\user\update_info.html:17
+msgid "ОТМЕНИТЬ"
+msgstr "CANCEL"
+
+#: .\task\templates\task\taskmodel_update_form.html:4
+msgid "Обновление задачи"
+msgstr "Task update"
+
+#: .\task\templates\task\taskmodel_update_form.html:11
+msgid "Обновить задачу"
+msgstr "Update task"
+
+#: .\task\templates\task\taskmodel_update_form.html:19
+#: .\task\templates\user\update_info.html:16
+msgid "ОБНОВИТЬ"
+msgstr "UPDATE"
+
+#: .\task\templates\user\info_user.html:10
+msgid "НИКНЕЙМ"
+msgstr "NICKNAME"
+
+#: .\task\templates\user\info_user.html:12
+msgid "ЗАДАЧИ"
+msgstr "TASKS"
+
+#: .\task\templates\user\info_user.html:20
+msgid "СПИСОК ЗАДАЧ"
+msgstr "TASK LIST"
+
+#: .\task\templates\user\info_user.html:21
+msgid "ВЫЙТИ"
+msgstr "EXIT"
+
+#: .\task\templates\user\login_user.html:10
+#: .\task\templates\user\update_info.html:10
+msgid "Авторизация"
+msgstr "Authorization"
+
+#: .\task\templates\user\login_user.html:12
+#: .\task\templates\user\register_user.html:12
+#: .\task\templates\user\update_info.html:12
+msgid "Никнейм"
+msgstr "Nickname"
+
+#: .\task\templates\user\login_user.html:14
+#: .\task\templates\user\register_user.html:14
+msgid "Пароль"
+msgstr "Password"
+
+#: .\task\templates\user\login_user.html:17
+msgid "ВОЙТИ"
+msgstr "LOGIN"
+
+#: .\task\templates\user\login_user.html:20
+msgid "Нет аккаунта? Зарегистрируйся!"
+msgstr "Don't have an account? Register!"
+
+#: .\task\templates\user\register_user.html:10
+msgid "Регистрация"
+msgstr "Registration"
+
+#: .\task\templates\user\register_user.html:16
+msgid "Повторить пароль"
+msgstr "Repeat password"
+
+#: .\task\templates\user\register_user.html:19
+msgid "РЕГИСТРАЦИЯ"
+msgstr "REGISTRATION"
+
+#: .\task\templates\user\register_user.html:22
+msgid "Уже есть аккаунт?"
+msgstr "Already have an account?"
+
+#~ msgid "Язык"
+#~ msgstr "Language"

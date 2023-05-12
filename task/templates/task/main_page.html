@@ -1,0 +1,28 @@
+{% extends 'task/base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Менеджер Задач" %}{% endblock %}
+
+
+
+{% block content %}
+
+<div class="start_work">
+
+    <div class="start_work_company">
+        {% trans 'ОТ КОМПАНИИ TEAM CATS' %}
+    </div>
+    <div class="start_work_title">
+        {% trans 'ToDo Manager' %}
+    </div>
+
+    <div class="start_work_subtitle">
+        {% trans 'СТАНЬТЕ БОЛЕЕ ПРОДУКТИВНЫМ С НАШИМ ПРИЛОЖЕНИЕМ' %}
+    </div>
+    <a href='{% url "user-login" %}' class="start_work_button">{% trans 'НАЧАТЬ СЕЙЧАС' %}</a>
+    <div class="bg_color"></div>
+</div>
+
+
+
+{% endblock %}

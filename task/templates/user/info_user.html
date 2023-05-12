@@ -1,0 +1,26 @@
+{% extends 'task/base.html' %}
+{% load widget_tweaks %}
+{% load i18n %}
+{% block title %} {{request.user}} {% endblock %}
+
+{% block content%}
+<div class="container">
+    <div class="task__form main-user-form-info">
+
+        <div class="task__form__text-under task_text">{% trans 'НИКНЕЙМ' %}</div>
+        <div class="user_text">{{ request.user }}</div>
+        <div class="task__form__text-under password_text">{% trans 'ЗАДАЧИ' %}</div>
+        <div class="user_text">{{ count }}</div>
+        <div class="task__form__text-under password_text">{% trans 'ЯЗЫК' %}</div>
+        {% get_current_language as LANGUAGE_CODE %}
+        <div class="user_text">{{ LANGUAGE_CODE }}</div>
+
+        <div class="info_user_btns">
+            <a href="{% url 'user-update' %}" class="task__form-btn editbtn" type="submit">{% trans "ИЗМЕНИТЬ" %}</a>
+            <a href="{% url 'task-list' %}" class="task__form-btn tasklistbtn">{% trans "СПИСОК ЗАДАЧ" %}</a>
+            <a href="{% url 'user-logout' %}" class="task__form-btn exitbtn">{% trans "ВЫЙТИ" %}</a>
+        </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

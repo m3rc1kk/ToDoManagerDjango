@@ -1,0 +1,24 @@
+{% extends 'task/base.html' %}
+{% load widget_tweaks %}
+{% load i18n %}
+{% block title %} Авторизация {% endblock %}
+
+{% block content%}
+<div class="container">
+    <div class="task__form main-user-form">
+        <form method="post">
+            <h1 class="task__form__text">{% trans "Авторизация" %}</h1>
+            {% csrf_token %}
+            <div class="task__form__text-under task_text">{% trans 'Никнейм' %}</div>
+            <div>{% render_field form.username class+="form form-user" %}</div>
+            <div class="task__form__text-under password_text">{% trans 'Пароль' %}</div>
+            <div>{% render_field form.password class+="form form-user" %}</div>
+            <div class="task_form__buttons">
+                <button class="task__form-btn loginbtn" type="submit">{% trans "ВОЙТИ" %}</button>
+                <a href="{% url 'main-page' %}" class="task__form-btn cancel-btn">{% trans "ОТМЕНИТЬ" %}</a>
+            </div>
+            <div class="login_text_for_register"> <a href="{% url 'user-register' %}">{% trans 'Нет аккаунта? Зарегистрируйся!' %} </a></div>
+        </form>
+    </div>
+</div>
+{% endblock %}
